@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: gray;
+}
+
+/* Container holding the background image */
+.hero-container {
+    background-image: url('palm.jpg');
+
+    /* 1. Prevent tiling or stretching */
+    background-position: center;
+    background-size: cover; 
+    
+    /* 2. Set dimensions matching the palm.jpg file dimension */
+    width: 100%;
+    max-width: 600px; /* For desktop */
+    height: 100vh;
+
+    /* Center the container on the page */
+    margin: 0 auto;
+
+    /* Flexbox layout to center the lofo right in the middle of palm.jpg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-letters {
+    max-width: 300px;
+    height: auto;
+    
+    /* Original logo image has black letters and white background, so here we invert the black letters to white and the white background becomes black */
+    filter: invert(1);
+
+    /* this drops the black background */
+    mix-blend-mode: screen;
+    border: 3px solid rebeccapurple;
+}
+
+.logo-pic {
+    max-width: 100px;
+    height: auto;
+
+    filter: invert(1);
+    border: 3px solid red;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.bjcree-regular {
+  font-family: "BJCree", serif;
+  font-weight: 400;
+  font-style: normal;
+}
