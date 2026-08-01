@@ -11,6 +11,11 @@ body {
     background-color: gray;
 }
 
+/* Two column page layout */
+.main-flex-items {
+    display: flex;
+}
+
 /* Container holding the background image */
 .hero-container {
     background-image: url('palm.jpg');
@@ -24,38 +29,43 @@ body {
     max-width: 600px; /* For desktop */
     height: 100vh;
 
-    /* Center the container on the page */
-    margin: 0 auto;
-
     /* Flexbox layout to center the lofo right in the middle of palm.jpg */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    padding-top: 20vh; /* Moves items more up */ 
 }
 
 .logo-letters {
     max-width: 300px;
     height: auto;
-    
     /* Original logo image has black letters and white background, so here we invert the black letters to white and the white background becomes black */
     filter: invert(1);
 
     /* this drops the black background */
     mix-blend-mode: screen;
-    border: 3px solid rebeccapurple;
+    /* border: 3px solid rebeccapurple; */
+
+    margin-left: -50px;
 }
 
 .logo-pic {
-    max-width: 100px;
+    width: 100px;
     height: auto;
 
     filter: invert(1);
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .logo-wrapper {
     display: flex;
     align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .bjcree-regular {
