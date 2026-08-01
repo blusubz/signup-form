@@ -68,7 +68,13 @@
                         <div class="form-bottom-row">
                             <div>
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="password" required>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least 8 characters. Including uppercase, lowercase and numbers."  
+                                    required>
                             </div>
                             <div>
                                 <label for="confirmed-password">Confirm Password</label>
