@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-body {
+/* body {
     color: white;
     background-color: gray;
-}
+} */
 
 /* Two column page layout */
 .main-flex-items {
@@ -67,11 +67,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 40px;
 }
 
-.middle-row {
+/* .middle-row {
     border: 2px solid red;
-}
+} */
 
 .form-top-row,
 .form-mid-row,
@@ -83,6 +84,47 @@ body {
 
 label {
     display: block;
+}
+
+/* Colors for input border on default, hover and active 
+Soft Cool Gray (Modern Minimal)	
+#e2e8f0	#cbd5e1	#0ea5e9 (Cyan/Sky) */
+input {
+    border-color: #e2e8f0;
+    border-radius: 3px;
+}
+
+input:hover {
+    border-color: #cbd5e1;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: gray;
+    /* 0 offset, 0 blur, 3px spread ring with 20% opacity */
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.bottom-row {
+    /* border: 2px solid brown; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type='password']:user-invalid {
+    border-color: red;
 }
 
 .bjcree-regular {
