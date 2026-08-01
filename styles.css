@@ -66,10 +66,27 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.middle-row {
+    border: 2px solid red;
+}
+
+.form-top-row,
+.form-mid-row,
+.form-bottom-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px;
+}
+
+label {
+    display: block;
 }
 
 .bjcree-regular {
   font-family: "BJCree", serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
 }
